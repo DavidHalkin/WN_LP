@@ -1,0 +1,71 @@
+.header{
+
+}
+.nav_holder{
+	li{
+		padding: 0 10px;
+		font:14px/16px 'Proxima Nova Rg';
+		font-weight: normal;
+		a{
+			color: #181818;
+			position: relative;
+			&:hover{
+				text-decoration: none;
+				&:after{
+					content: "";
+					width: 20px;
+					height: 3px;
+					background: #f1c807;
+					position: absolute;
+					bottom: -13px;
+					left: 50%;
+					transform:translateX(-50%);
+				}
+			}
+		}
+		&.active{
+			a{
+				&:after{
+					content: "";
+					width: 20px;
+					height: 3px;
+					background: #f1c807;
+					position: absolute;
+					bottom: -13px;
+					left: 50%;
+					transform:translateX(-50%);
+				}
+			}
+		}
+	}
+	@include media-breakpoint-down(lg) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 20;
+		// left: -250px;
+		max-width: 250px;
+		flex:0 0 250px;
+		min-height: 100vh;
+		background: #fff;
+		padding: 15px !important;
+		li{
+			max-width: 100%;
+			flex:0 0 100%;
+			padding: 0;
+			a{
+				padding: 15px;
+				display: block;
+				&:after{
+					left: 15px !important;
+					transform:none !important;
+					bottom: 0 !important;
+				}
+			}
+		}
+	}
+}
+.btn_mob{
+	width: 30px;
+	height: 30px;
+}

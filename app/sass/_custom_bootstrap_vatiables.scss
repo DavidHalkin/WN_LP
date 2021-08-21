@@ -1,0 +1,33 @@
+$theme-colors: (
+   "primary": #181818,
+);
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1450px
+// );
+$input-focus-box-shadow: none;
+
+
+$input-border-color: #DDE3EA;
+$input-focus-border-color:#37AEEC;
+$input-placeholder-color:#586B7C;
+$form-feedback-invalid-color: #FF6A6A;
+
+
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none !important;
+
+$body-color: #14111a;
+$btn-border-radius: 10px;
+$input-border-radius: 5px;
+
+$link-color:#1571ae;
+$link-hover-color: $link-color;
+
+$rounded-pill: 5px;
+
+
+// $font-size-base: 1.4rem;

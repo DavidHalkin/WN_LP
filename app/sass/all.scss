@@ -1,0 +1,73 @@
+@import
+'_custom_bootstrap_vatiables.scss',
+'../../bower_components/bootstrap/scss/_functions.scss',
+'../../bower_components/bootstrap/scss/_variables.scss',
+'../../bower_components/bootstrap/scss/_mixins.scss',
+'_param',
+'_footer',
+'header';
+.centered{
+	max-width: 1230px;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.decor_txt{
+	position: relative;
+	padding: 0 60px;
+	vertical-align: middle;
+	&:before,&:after{
+		content: "";
+		width: 12px;
+		height: 75px;
+
+		background: #f1c807;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		// display: inline-block;
+		transform: translateY(-50%) rotate(30deg);
+		@include media-breakpoint-down(md) {
+			height: 50px;
+			width: 7px;
+		}
+	}
+	&:after{
+		left: auto;
+		right: 0;
+		// margin-right: 0;
+		// margin-left: 40px;
+	}
+}
+.hero_block{
+	padding: 210px 0 0 0;
+	padding: calc(210vw / 19.2) 0 0 0;
+	overflow: hidden;
+	h1{
+		font:bold 72px/75px 'Proxima Nova Rg';
+		@include media-breakpoint-down(xl) {
+			// background: #000;
+			font-size: calc(72vw / 19.2);
+			@include media-breakpoint-down(sm) {
+				font-size: 18px;
+				span{
+					padding: 0 30px;
+					&:after,&:before{
+						height: 35px;
+						width: 4px;
+					}
+				}
+			}
+		}
+
+	}
+}
+.sub_title{
+	font:bold 38px 'Proxima Nova Rg';
+	letter-spacing: 1px;
+	@include media-breakpoint-down(md) {
+		font-size: 30px;
+	}
+}
