@@ -101,6 +101,7 @@ gulp.task('scripts', function() {
 		'bower_components/owl.carousel/dist/owl.carousel.min.js',
 		'bower_components/jcf/dist/js/jcf.js',
 		'bower_components/jcf/dist/js/jcf.select.js',
+		'node_modules/chart.js/dist/chart.min.js',
 		// 'bower_components/datatables.net/js/jquery.dataTables.min.js',
 		// 'bower_components/bootstrap-select/dist/js/bootstrap-select.min.js',
 		// 'bower_components/chart.js/dist/Chart.min.js',

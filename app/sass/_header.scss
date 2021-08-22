@@ -1,5 +1,11 @@
 .header{
-
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 98px;
+	// border-bottom: 1px solid #ccc;
 }
 .nav_holder{
 	li{
@@ -40,15 +46,23 @@
 	}
 	@include media-breakpoint-down(lg) {
 		position: fixed;
-		top: 0;
-		left: 0;
+		top: 98px;
 		z-index: 20;
-		// left: -250px;
+		left: -250px;
 		max-width: 250px;
 		flex:0 0 250px;
-		min-height: 100vh;
+		height: calc(100vh - 98px);
 		background: #fff;
 		padding: 15px !important;
+		overflow: auto;
+		transition:left 0.3s ease-in;
+		border-right: 1px solid #ccc;
+		ul{
+			overflow: auto;
+		}
+		&.opened{
+			left: 0;
+		}
 		li{
 			max-width: 100%;
 			flex:0 0 100%;
@@ -65,7 +79,82 @@
 		}
 	}
 }
-.btn_mob{
-	width: 30px;
-	height: 30px;
+.menu_mob{
+	// position: absolute;
+	// top: 18px;
+	// right: 18px;
+	margin-left: auto;
+	position: relative;
+	width: 31px;
+	height: 31px;
+	background: rgba(0,0,0,.5);
+	border-radius: 3px;
+	text-indent: -9999px;
+	overflow: hidden;
+	cursor: pointer;
+	display: none;
+	@include media-breakpoint-down(lg) {
+		display: block;
+	}
+	em{
+		font-size: 0;
+		line-height: 0;
+		text-indent: -99999px;
+		content: none;
+	}
+	&:after,&:before,em{
+		background: #fff;
+		border-radius: 4px;
+		position: absolute;
+		top: 16px;
+		left: 25%;
+		right: 25%;
+		height: 3px;
+		margin-top: -2px;
+		transition: all .2s linear;
+		content:"";
+	}
+	&:after{
+		top: 22px;
+	}
+	&:before{
+		top: 10px;
+	}
+	&.opened{
+		em{
+			opacity: 0;
+		}
+		&:before,&:after{
+			transform: rotate(45deg);
+			top: 16px;
+			left: 15%;
+			right: 15%;
+		}
+		&:after{
+			transform: rotate(-45deg);
+		}
+	}
+}
+body{
+	&.opened{
+		overflow: hidden !important;
+		&:after{
+			content: "";
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(#000,.4);
+			z-index: 2;
+		}
+		@include media-breakpoint-up(xl) {
+			overflow: visible !important;
+			&:after{
+				content: none;
+			}
+		}
+	}
 }
