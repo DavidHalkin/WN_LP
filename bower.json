@@ -10,7 +10,8 @@
   "homepage": "",
   "dependencies": {
     "jquery": "^3.2.1",
-    "bootstrap": "^4.2.1"
+    "bootstrap": "^4.2.1",
+    "wow": "wowjs#^1.1.2"
   },
   "devDependencies": {}
 }
