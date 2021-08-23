@@ -8,7 +8,7 @@
 
 @font-face { font-family: 'Proxima Nova Rg'; src: url("../fonts/ProximaNova-Bold.eot"); src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg"); font-weight: bold; font-style: normal; font-display: swap; }
 
-body { font-family: 'HelveticaNeueCyr'; font-weight: normal; }
+body { font-family: 'HelveticaNeueCyr'; font-weight: normal; position: relative; }
 
 .btn-lg { font: normal 24px 'Proxima Nova Rg'; letter-spacing: 1px; padding-top: 25px; padding-bottom: 25px; }
 
@@ -56,9 +56,9 @@ body { font-family: 'HelveticaNeueCyr'; font-weight: normal; }
 
 .nav_holder li a { color: #181818; position: relative; }
 
-.nav_holder li a:hover { text-decoration: none; }
+.nav_holder li a:hover, .nav_holder li a.active { text-decoration: none; }
 
-.nav_holder li a:hover:after { content: ""; width: 20px; height: 3px; background: #f1c807; position: absolute; bottom: -13px; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+.nav_holder li a:hover:after, .nav_holder li a.active:after { content: ""; width: 20px; height: 3px; background: #f1c807; position: absolute; bottom: -13px; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 
 .nav_holder li.active a:after { content: ""; width: 20px; height: 3px; background: #f1c807; position: absolute; bottom: -13px; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 
