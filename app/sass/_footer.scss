@@ -1,0 +1,54 @@
+.footer{
+	margin-top: 70px;
+	.footer_cont{
+		border-top: 3px solid #14111a;
+	}
+	h2,h3{
+		letter-spacing: 1px;
+	}
+	h2{
+		font:bold 30px/32px 'Proxima Nova Rg';
+	}
+	h3{
+		font:400 24px/26px 'Proxima Nova Rg';
+		margin-bottom: 40px;
+	}
+	.btn{
+		min-width: 300px;
+		@include media-breakpoint-down(sm) {
+			min-width: 270px;
+		}
+	}
+	ul{
+		li{
+			a{
+				color: #181818;
+				text-decoration: underline;
+				&:hover{
+					color: #f1c807;
+				}
+			}
+			&.active{
+				a{color: #f1c807;}
+			}
+		}
+	}
+	h4{
+		font-size: 18px;
+		line-height: 20px;
+		font-weight: bold;
+		margin-bottom: 20px;
+		text-transform: capitalize;
+	}
+	p{
+		a{color: #181818;}
+		margin-bottom: 17px;
+	}
+}
+.copy{
+	background: #e8e8e8;
+	p{
+		font-size: 12px;
+		line-height: 25px;
+	}
+}

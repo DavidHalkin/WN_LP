@@ -168,10 +168,327 @@
 						<div class="graph_block mx-auto text-center">
 							<canvas id="myChart" width="400" height="400"></canvas>
 						</div>
+						<table class="cstm_table">
+							<tbody>
+								<tr>
+									<td class="l_part px-3 px-lg-5 py-3">
+										<span>Резерв для майнинга игроками</span>
+									</td>
+									<td class="r_part px-3 px-lg-5 py-3">
+										<strong>5 000 000 000</strong>
+									</td>
+								</tr>
+								<tr>
+									<td class="l_part px-3 px-lg-5 py-3">
+										<span>Резерв для биржи</span>
+									</td>
+									<td class="r_part px-3 px-lg-5 py-3">
+										<strong>1 000 000 000</strong>
+									</td>
+								</tr>
+								<tr>
+									<td class="l_part px-3 px-lg-5 py-3">
+										<span>Разработка нового стиля и дизайна</span>
+									</td>
+									<td class="r_part px-3 px-lg-5 py-3">
+										<strong>500 000 000</strong>
+									</td>
+								</tr>
+								<tr>
+									<td class="l_part px-3 px-lg-5 py-3">
+										<span>Маркетинг и обслуживание проекта</span>
+									</td>
+									<td class="r_part px-3 px-lg-5 py-3">
+										<strong>4 500 000 000</strong>
+									</td>
+								</tr>
+								<tr>
+									<td class="l_part px-3 px-lg-5 py-3">
+										<span>Токены для команды проекта</span>
+									</td>
+									<td class="r_part px-3 px-lg-5 py-3">
+										<strong>4 000 000 000</strong>
+									</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td class="l_part px-3 px-lg-5 py-3">
+										<span>ВСЕГО</span>
+									</td>
+									<td class="r_part px-3 px-lg-5 py-3">
+										<strong>15 000 000 000</strong>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+						<div class="row pt-3 pt-lg-5">
+							<div class="col-12 col-lg-9">
+								<p><strong>Резерв для майнинга игроками -</strong> это та часть токенов, которые будут эмитированы игроками за продолжительное время (ориентировочно до 10 лет). Поскольку игровой мир некоторое количество токенов потребляет, то после исчерпания этого лимита, игровая эмиссия будет поддерживаться за счёт накопленных игрой токенов на более ранних сессиях. То есть фактически нами будет поддерживаться общее постоянное число токенов в игре, ради стабилизации цен внутри игрового мира.</p>
+								<p><strong>Резерв для биржи -</strong> это те токены, которые будут обеспечивать торговлю на бирже.</p>
+								<p><strong>Разработка нового стиля и дизайна -</strong> это та часть проданных на IDO токенов, которые пойдут на обновление действующего прототипа до уровня современных игр в части дизайна и интерфейса.</p>
+								<p><strong>Маркетинг и обслуживание проекта -</strong> это та часть проданных на IDO токенов, рассчитанная на поступательное развитие проекта, главным образом маркетинг, ради привлечения множества новых игроков, после запуска коммерческой версии игры.</p>
+								<p><strong>Токены для команды проекта -</strong> это те токены, которые будут распределены между тремя авторами проекта.</p>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>																	
+				<div class="one_section">
+					<div class="centered">
+						<div class="decor_line d-flex  justify-content-end">
+							<em></em>
+							<em></em>
+							<em></em>
+							<em></em>
+							<em></em>
+						</div>
+						<h2 class="styled_title text-center">Технологии</h2>
+						<div class="row mx-xl-n4">
+							<div class="col-12 col-lg-6 px-xl-4">
+								<div class="row mx-xl-n4">
+									<div class="col-12 col-xl-6 px-xl-4 pb-4 pb-lg-0">
+										<div class=" pb-4 pb-lg-0">
+											<h3 class="decor_title text-uppercase">System architecture</h3>
+											<p>На данный момент игра представляет собой браузерное server-rendering приложение, где вся клиентская и серверная логика выполняется на backend'е</p>
+										</div>
+										<h3 class="decor_title text-uppercase">Game-core and economics-core</h3>
+										<p>Уникальный игровой движок и экономический движок, симулирующий реальные законы экономики, написаны с нуля нашим game-dev программистом в течении 2 лет разработки на PHP 7.3.</p>
+									</div>
+									<div class="col-12 col-xl-6 px-xl-4 pb-4 pb-lg-0">
+										<h3 class="decor_title text-uppercase">BEP-20 and ERC-20 integration</h3>
+										<p>По началу DUCAT токен будет выпущен на Binance Smart Chain, как на более дешевой и быстрой альтернативе Ethereum. Потом мы планируем сделать мост между BEP-20 и  ERC-20, а также мосты между нативным токеном Chromia и BEP-20, а также между Chromia и ERC-20. Эти мосты будут разработаны вне игры The Wealth of Nations.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6  px-xl-4">
+								<h3 class="decor_title text-uppercase">Blockchain integration</h3>
+								<p>Мы планируем интегрировать блокчейн Chromia для всей внутриигровой логики backend'а, такой как отправка денег и ресурсов между игроками и между игровыми объектами, работа биржи игровых ресурсов, контроль эмиссии денег путем внутриигрового майнинга, управление аккаунтами, хранение и управление состоянием игрока вместе с его игровыми активами и так далее. Блокчейн Chromia достаточно производителен, чтобы обеспечить хорошую скорость транзакций при масштабировании пользователей, а также очень безопасен за счет встроенных механизмов защиты, которые позволят защитить проект от многих уязвимостей</p>
+							</div>
+						</div>									
+					</div>
+				</div>
+				<div class="one_section">
+					<div class="centered">
+						<div class="decor_line d-flex  justify-content-end">
+							<em></em>
+							<em></em>
+							<em></em>
+							<em></em>
+							<em></em>
+							<em></em>
+						</div>
+						<h2 class="styled_title text-center">Дорожная карта</h2>
+						<div class="row">
+							<div class="col-12 col-lg-9">
+								<ul class="list_info list-unstyled  mb-0">
+									<li>
+										<h3>Q1 2019</h3>
+										<p>Введены случайные катаклизмы; эпидемии, ураганы, пожары. Появилась возможность выбрать стройматериалы для зданий. Данный параметр влияет на устойчивость зданий к стихиям. Катаклизмы действуют только на достаточно развитые государства, в зависимости от рейтинга. <br>Параметр удачи правителя влияет на вероятность катаклизма. <br>Введена возможность флоту пересекать не только моря, но и реки.</p>
+									</li>
+									<li>
+										<h3>Q4 2019</h3>
+										<p>Игровой рынок стал более автоматизирован. <br>Войска начали заниматься мародерством при коротком горизонте планирования. <br>Владение регионами дает бонусные ресурсы в зависимости от региона.</p>
+									</li>
+									<li>
+										<h3>Q1 2020</h3>
+										<p>Оптимизирована эффективность производства населения в соответствии с экономическими законами. Инвестиции населения направляются в производства согласно приоритетам по доходности.</p>
+									</li>
+									<li>
+										<h3>Q2 2020</h3>
+										<p>Введена возможность эмбарго на торговлю. <br>Усложнена механика коррупции, теперь она влияет на эффективность законодательства. <br>Улучшен механизм миграции, добавлена привлекательность миграции по уровням богатства. <br>Добавлена зависимость горизонта планирования на изменение уровня огатства. <br>Добавлена зависимость горизонта планирования на требование жалования у военных страт и наемников.</p>
+									</li>
+									<li>
+										<h3>Q3 2020</h3>
+										<p>Технологии получают бонусы на ускорение изучения; гражданские - зависят от школ и университетов; экономические - зависят от уровня ВВП на душу населения; тактика - за победы в сражениях; стратегия - за победы в войне; снаряжение - бонус дается как за учебные заведения так и за постройку оружейных, бронника и осадных мастерских; морские - за учебные заведения и построенные верфи.</p>
+									</li>
+									<li>
+										<h3>Q2 2021</h3>
+										<p>Изменено поведение страт и их потребление, согласно моделям динамического равновесия. <br>Исправлен баг с “кризисом перепроизводства”. <br>Добавлена зависимость объёма инвестиций от горизонта планирования. <br>Добавлен механизм контрабанды.</p>
+									</li>
+									<li>
+										<h3>Q3 2021</h3>
+										<p>Проведение IDO и листинг токена на бирже. <br>Крупное изменение дизайна и игрового интерфейса. <br>Добавление BEP-20 токена в игру на BSC testnet. <br>Начало события публичного тестирования с наградой за нахождение уязвимостей. <br>Проведение аудита безопасности. <br>Добавление мостов токена к другим блокчейнам кроме BSC. </p>
+									</li>
+									<li>
+										<h3>Q4 2021</h3>
+										<p>Перевод игры на английский язык. <br> Коммерческий запуск игры. <br> Начало маркетинговой компании. <br> Крупное изменение тактической карты и механики боёв. <br> Добавление анимации. <br> Изменение стратегической карты с четырехугольных координатных ячеек на шестиугольные. <br> Крупное изменение меню города, меню торговли и меню технологий.</p>
+									</li>
+									<li>
+										<h3>Q1 2022</h3>
+										<p>Добавление новых законов и возможностей внутренней политики. <br> Добавление новых технологий и изменение механики их изучения. <br> Оптимизация дипломатических возможностей. <br>Изменение режима отдыха. <br> Добавление зависимости на возникновение разбойников и корсаров и добавление их влияния на экономические параметры региона. <br>Улучшение механизма торговых путей. </p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="one_section">
+					<div class="centered">
+						<div class="decor_line d-flex  justify-content-end">
+							<em></em>
+							<em></em>
+							<em></em>
+							<em></em>
+							<em></em>
+							<em></em>
+							<em></em>
+						</div>
+						<h2 class="styled_title text-center">Бизнес-модель</h2>
+						<div class="row justify-content-center">
+							<div class="col-12 col-lg-9 cstm_align">
+								<p>Мы предлагаем приобрести токены сейчас, <strong>по стократно (!) более низкой цене</strong>, чем та равновесная, к которой будет направлен тренд в связи с ростом числа игроков. Для этого достаточно просто поучаствовать в нашем аукционе с первичным размещением токенов.</p>
+								<p>После коммерческого запуска проекта, токен будет размещен для торговли на биржах.</p>
+								<p>Средний размер донатов для этого рынка колеблется в районе 1-1.5 доллара в месяц с одного пользователя. Это означает, что за одну игровую сессию для тысячи игроков длящуюся примерно полгода, игроки купят токенов на нашей бирже на сумму до 9000 долларов. При этом в игровой сессии ими будет добыт миллион токенов. Таким образом когда цена токена будет низкой - донаторы будут покупать большее значение токенов, из возможно добытого в игре. Это означает, что спрос на токены будет стабильно превышать предложение со стороны игроков (избыточная масса токенов в игровых сессиях будет сокращаться механикой игры). Подобная ситуация защитит наш токен на бирже от спекулятивных шоков.</p>
+							</div>
+						</div>
+						<div class="info_block pt-3 pb-0 pb-md-4">
+							<div class="titl_inf">Резерв проекта</div>
+							<div class="row justify-content-end py-4 no-gutters">
+								<div class="col-11 col-sm-6">
+									<div class="row mx-n2 align-items-center ">
+										<div class="col-auto pl-0 pr-2">
+											<span class="ico_arrow"></span>
+										</div>
+										<div class="col px-2">
+											<p class="mb-0 lh_18">Вывод лишних токенов <br>в ходе игрового процесса</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="titl_inf">Игровая сессия</div>
+							<div class="row justify-content-center py-4 align-items-center">
+								<div class="col-6 col-sm-5">
+									<div class="row mx-n2 align-items-center">
+										<div class="col px-2 text-right">
+											<p class="mb-0 lh_18">Покупка токенов <br> на бирже</p>
+										</div>
+										<div class="col-auto px-2">
+											<span class="ico_arrow"></span>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-5">
+									<div class="row mx-n2 align-items-center">
+										<div class="col-auto px-2">
+											<span class="ico_arrow invers_ico"></span>
+										</div>
+										<div class="col px-2">
+											<p class="mb-0 lh_18">Продажа добытых токенов на бирже</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="titl_inf">Биржа</div>
+						</div>
+						<div class="text-center pt-5 pb-3 read_more read_more_js">
+							<span class="fz_18">Подробнее о проекте</span>
+						</div>
+						<div class="hide_section py-3 py-lg-5 hide_section_js">
+							<div class="row">
+								<div class="col-12 col-lg-9">
+									<p>Внутри игровых сессий заложены механизмы, которые позволяют регулировать объём токенов в игровой сессии для стабилизации игровых цен и это позволяет регулировать объём прибыли проекта. То есть когда токен будет слишком  дорогим, либо он будет исчерпываться из заложенных запасах проекта, мы сможем больше выводить их из игровых сессий в ходе естественного игрового процесса, для того чтобы позволять добывать его в новых сессиях в прежнем объёме, не прибегая к субсидированию (без ущерба для прибыли).</p>
+									<p>Таким образом прибылью проекта является разница между выручкой в 9000$ с проданных на бирже токенов и эмитированных игроками токенов, в количестве до миллиона (с прочими издержками), за одну игровую сессию. То количество токенов, которое будет регулироваться в игровых сессиях (чтобы предопределять размер нашей прибыли), будет зависеть от наших планируемых расходов на продвижение проекта.</p>
+									<p>Инвестируя средства в продвижение проекта и привлекая тем самым новых игроков, мы фактически стимулируем рост спроса на наш токен на бирже, предопределяя рост его цены - поскольку предложение ограничено. Сотни тысяч и даже миллионы игроков будут представлять из себя постоянный спрос на токены вне зависимости от цены токена. Такая ситуация с криптоактивами даст гарантированный рост стоимости и защиту от сильных колебаний, поскольку основной спрос будут представлять не спекулянты, а игроки, что исключает резкие спады спроса в отличие от других криптоактивов на рынке.</p>
+								</div>
+								<div class="col-12 col-lg-8">
+									<div class="p-3 p-lg-5 bg_quote">
+										<p><strong>В чём заключается наше предложение инвесторам? </strong></p>
+										<p>Спрос на токены со стороны игроков будет превышать предложение со стороны игроков, толкая цену токена вверх до тех пор, пока не достигнет относительно равновесной цены, около одного цента за токен (9000/1000000). Всё что для этого нужно - достаточный объём игроков и поскольку практически все доходы проекта будут направлены на продвижение проекта, то есть на постоянный рост потока игроков - это проблема нами исключается.</p>
+										<p class="mb-0"><strong>Мы предлагаем стабильный и гарантированный механикой игры, рост стоимости приобретаемого сейчас токена.</strong></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="one_section">
+					<div class="centered">
+						<div class="decor_line d-flex  justify-content-end">
+							<em></em>
+							<em></em>
+							<em></em>
+							<em></em>
+							<em></em>
+							<em></em>
+							<em></em>
+							<em></em>
+						</div>
+						<h2 class="styled_title text-center">Команда</h2>
+						<div class="row text-center justify-content-center">
+							<div class="col-10 col-md-4 pb-5 comand_column">
+								<div class="img_prev">
+									<img src="https://picsum.photos/390/430" alt="" class="img-fluid">
+								</div>
+								<h3 class="pt-3 pt-md-5">Michael Oreshnikov</h3>
+								<p>Game Development</p>
+								<a href="https://telegram.me/asmodaus88" target="_blank" class="btn btn-secondary d-inline-flex align-items-center justify-content-center"> <i class="ico_telegram mr-1"></i>@asmodaus88</a>
+							</div>
+							<div class="col-10 col-md-4 pb-5 comand_column">
+								<div class="img_prev">
+									<img src="https://picsum.photos/390/430" alt="" class="img-fluid">
+								</div>
+								<h3 class="pt-3 pt-md-5">Vedamir Efanov </h3>
+								<p>Blockchain Software Engineer DEFI Consultant</p>
+								<a href="https://telegram.me/corentoren" target="_blank" class="btn btn-secondary d-inline-flex align-items-center justify-content-center"> <i class="ico_telegram mr-1"></i>@corentoren</a>
+							</div>
+							<div class="col-10 col-md-4 pb-5 comand_column">
+								<div class="img_prev">
+									<img src="https://picsum.photos/390/430" alt="" class="img-fluid">
+								</div>
+								<h3 class="pt-3 pt-md-5">Alexey Tereshuk</h3>
+								<p>Adviser, Marketing, Economist</p>
+								<a href="https://telegram.me/kamendant" target="_blank" class="btn btn-secondary d-inline-flex align-items-center justify-content-center"> <i class="ico_telegram mr-1"></i>@kamendant</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="centered">
+					<div class="footer_cont pt-3 pt-md-5">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-6 text-center text-lg-left">
+								<h2 class="text-uppercase">Wealth Of Nations</h2>
+								<h3 class="text-uppercase">Whitepaper</h3>
+								<div class="mb-3">
+									<a href="#" class="btn btn-primary text-uppercase py-3">Купить токены</a>
+								</div>
+								<div class="mb-3">
+									<a href="#" class="btn btn-primary text-uppercase py-3">Технический прототип</a>
+								</div>
+							</div>
+							<div class="col-12 col-sm-8 col-lg-6">
+								<div class="row">
+									<div class="col-6 pt-4 pt-lg-0 text-right text-lg-left">
+										<ul class="list-unstyled mb-0">
+											<li class="pb-3 active"><a href="#">Обзор</a></li>
+											<li class="pb-3"><a href="#">Рынок</a></li>
+											<li class="pb-3"><a href="#">Текущий статус</a></li>
+											<li class="pb-3"><a href="#">Токеномика</a></li>
+											<li class="pb-3"><a href="#">Дорожная карта</a></li>
+											<li class="pb-3"><a href="#">Бизнес-модель</a></li>
+											<li class="pb-3"><a href="#">Команда</a></li>
+										</ul>
+									</div>
+									<div class="col-6 pt-4 pt-lg-0 ">
+										<h4>Контакты</h4>
+										<p><a href="tel:+380505051020">+38 050 505 1020</a></p>
+										<p class="text-truncate"><a href="mailto:ksdgflksd@gmail.com">ksdgflksd@gmail.com</a></p>
+										<p><a href="#" class="ico_telegram"></a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copy mt-3  text-center text-lg-left">
+					<div class="centered">
+						<p class="mb-0">Wealth of Nations ©  2019-2021. All rights reserved.</p>
+					</div>
+				</div>
+			</div>														
 		</div>
+		<a href="#" class="go_top">asasas</a>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/chart.min.js"></script>
